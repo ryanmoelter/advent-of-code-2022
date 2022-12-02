@@ -1,0 +1,27 @@
+[versions]
+kotlin = "1.7.20"
+coroutines = "1.6.4"
+datetime = "0.4.0"
+kotest = "5.5.4"
+kotlinter = "3.12.0"
+
+[plugins]
+kotest = { id = "io.kotest.multiplatform", version.ref = "kotest" }
+
+[libraries]
+# Kotlin
+coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
+coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "coroutines" }
+
+kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "datetime" }
+
+# Testing
+kotest-framework-engine = { module = "io.kotest:kotest-framework-engine", version.ref = "kotest" }
+kotest-framework-datatest = { module = "io.kotest:kotest-framework-datatest", version.ref = "kotest" }
+kotest-assertions-core = { module = "io.kotest:kotest-assertions-core", version.ref = "kotest" }
+kotest-runner-junit5 = { module = "io.kotest:kotest-runner-junit5", version.ref = "kotest" }
+kotest-extensions-robolectric = { module = "io.kotest.extensions:kotest-extensions-robolectric", version.ref = "kotestrobolectric" }
+
+[bundles]
+
+
