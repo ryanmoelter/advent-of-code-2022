@@ -4,7 +4,7 @@ import io.kotest.core.spec.style.FunSpec
 import io.kotest.matchers.ints.shouldBeExactly
 
 class Day01Test : FunSpec({
-  test("example should work") {
+  context("example should work") {
     val input = """
       1000
       2000
@@ -21,7 +21,14 @@ class Day01Test : FunSpec({
 
       10000
     """.trimIndent()
-    countCalories(input) shouldBeExactly 24_000
+
+    test("for part 1") {
+      countCalories(input) shouldBeExactly 24_000
+    }
+
+    test("for part 2") {
+      countTopCalories(input, 3) shouldBeExactly 45_000
+    }
   }
 
 })
