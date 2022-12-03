@@ -20,8 +20,16 @@ kotest-framework-engine = { module = "io.kotest:kotest-framework-engine", versio
 kotest-framework-datatest = { module = "io.kotest:kotest-framework-datatest", version.ref = "kotest" }
 kotest-assertions-core = { module = "io.kotest:kotest-assertions-core", version.ref = "kotest" }
 kotest-runner-junit5 = { module = "io.kotest:kotest-runner-junit5", version.ref = "kotest" }
-kotest-extensions-robolectric = { module = "io.kotest.extensions:kotest-extensions-robolectric", version.ref = "kotestrobolectric" }
 
 [bundles]
-
-
+main = [
+    "coroutines-core",
+    "kotlinx-datetime"
+]
+test = [
+    "coroutines-test",
+    "kotest-framework-engine",
+    "kotest-framework-datatest",
+    "kotest-assertions-core",
+    "kotest-runner-junit5",
+]
