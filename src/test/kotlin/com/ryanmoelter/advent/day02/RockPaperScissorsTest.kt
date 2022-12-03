@@ -3,7 +3,7 @@ package com.ryanmoelter.advent.day02
 import io.kotest.core.spec.style.FunSpec
 import io.kotest.matchers.ints.shouldBeExactly
 
-class Day02Test : FunSpec({
+class RockPaperScissorsTest : FunSpec({
   context("example should work") {
     val input = """
       A Y

@@ -3,7 +3,7 @@ package com.ryanmoelter.advent.day01
 import io.kotest.core.spec.style.FunSpec
 import io.kotest.matchers.ints.shouldBeExactly
 
-class Day01Test : FunSpec({
+class CaloriesTest : FunSpec({
   context("example should work") {
     val input = """
       1000
